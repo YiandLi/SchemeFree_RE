@@ -1,0 +1,5 @@
+[SEP]
+default
+[UNK]
+[CLS]
+[EOS]

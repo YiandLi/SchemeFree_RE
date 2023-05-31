@@ -1,0 +1,250 @@
+srun: job 1396711 queued and waiting for resources
+srun: job 1396711 has been allocated resources
+srun: Job 1396711 scheduled successfully!
+Current QUOTA_TYPE is [reserved], which means the job has occupied quota in RESERVED_TOTAL under your partition.
+Current PHX_PRIORITY is normal
+
+[2023-05-30 09:03:38,326][__main__][INFO] - ========== hydra config =========
+[2023-05-30 09:03:38,328][__main__][INFO] - mode:train
+[2023-05-30 09:03:38,329][__main__][INFO] - encoder_type:bert-base-uncased
+[2023-05-30 09:03:38,329][__main__][INFO] - max_seq_len:128
+[2023-05-30 09:03:38,329][__main__][INFO] - dataset_path:data/nyt_star
+[2023-05-30 09:03:38,330][__main__][INFO] - batch_size:32
+[2023-05-30 09:03:38,330][__main__][INFO] - epochs:10
+[2023-05-30 09:03:38,331][__main__][INFO] - lr:5e-05
+[2023-05-30 09:03:38,529][__main__][INFO] - ========== device: cuda =========
+[2023-05-30 09:03:38,532][__main__][INFO] - ====================Using Gpu: NVIDIA A100-SXM4-80GB ====================
+[2023-05-30 09:03:39,151][root][INFO] - load tokenizer from /mnt/petrelfs/liuyilin/SchemeFree_RE/data/nyt_star/ent_decoder_tokenizer
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[2023-05-30 09:03:39,155][root][INFO] - load tokenizer from /mnt/petrelfs/liuyilin/SchemeFree_RE/data/nyt_star/rel_decoder_tokenizer
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[2023-05-30 09:03:46,763][data_utils][INFO] - Reading tasks from data/nyt_star/train_data.json...
+[2023-05-30 09:03:46,764][data_utils][INFO] - For decoder output, the ent label and rel label separator are [SEP](0) and [SEP](0)
+load train data:   0%|          | 0/56195 [00:00<?, ?it/s]load train data:   1%|          | 376/56195 [00:00<00:14, 3758.08it/s]load train data:   1%|▏         | 771/56195 [00:00<00:14, 3864.19it/s]load train data:   2%|▏         | 1171/56195 [00:00<00:14, 3921.12it/s]load train data:   3%|▎         | 1564/56195 [00:00<00:14, 3886.25it/s]load train data:   3%|▎         | 1957/56195 [00:00<00:13, 3900.29it/s]load train data:   4%|▍         | 2350/56195 [00:00<00:13, 3909.76it/s]load train data:   5%|▍         | 2742/56195 [00:00<00:13, 3892.95it/s]load train data:   6%|▌         | 3134/56195 [00:00<00:13, 3899.88it/s]load train data:   6%|▋         | 3526/56195 [00:00<00:13, 3905.23it/s]load train data:   7%|▋         | 3917/56195 [00:01<00:13, 3906.22it/s]load train data:   8%|▊         | 4311/56195 [00:01<00:13, 3913.75it/s]load train data:   8%|▊         | 4706/56195 [00:01<00:13, 3922.11it/s]load train data:   9%|▉         | 5099/56195 [00:01<00:13, 3915.36it/s]load train data:  10%|▉         | 5494/56195 [00:01<00:12, 3922.27it/s]load train data:  10%|█         | 5890/56195 [00:01<00:12, 3933.42it/s]load train data:  11%|█         | 6284/56195 [00:01<00:12, 3924.39it/s]load train data:  12%|█▏        | 6677/56195 [00:01<00:12, 3899.37it/s]load train data:  13%|█▎        | 7069/56195 [00:01<00:12, 3905.27it/s]load train data:  13%|█▎        | 7460/56195 [00:01<00:12, 3888.29it/s]load train data:  14%|█▍        | 7855/56195 [00:02<00:12, 3905.07it/s]load train data:  15%|█▍        | 8246/56195 [00:02<00:12, 3891.23it/s]load train data:  15%|█▌        | 8640/56195 [00:02<00:12, 3905.43it/s]load train data:  16%|█▌        | 9031/56195 [00:02<00:12, 3894.18it/s]load train data:  17%|█▋        | 9422/56195 [00:02<00:12, 3897.01it/s]load train data:  17%|█▋        | 9812/56195 [00:02<00:11, 3873.13it/s]load train data:  18%|█▊        | 10200/56195 [00:02<00:11, 3863.35it/s]load train data:  19%|█▉        | 10602/56195 [00:02<00:11, 3907.86it/s]load train data:  20%|█▉        | 10993/56195 [00:02<00:11, 3898.73it/s]load train data:  20%|██        | 11389/56195 [00:02<00:11, 3913.94it/s]load train data:  21%|██        | 11784/56195 [00:03<00:11, 3923.15it/s]load train data:  22%|██▏       | 12177/56195 [00:03<00:11, 3922.79it/s]load train data:  22%|██▏       | 12570/56195 [00:03<00:11, 3912.88it/s]load train data:  23%|██▎       | 12964/56195 [00:03<00:11, 3917.64it/s]load train data:  24%|██▍       | 13359/56195 [00:03<00:10, 3926.10it/s]load train data:  24%|██▍       | 13752/56195 [00:03<00:10, 3898.80it/s]load train data:  25%|██▌       | 14142/56195 [00:03<00:10, 3883.20it/s]load train data:  26%|██▌       | 14540/56195 [00:03<00:10, 3910.76it/s]load train data:  27%|██▋       | 14932/56195 [00:03<00:10, 3903.48it/s]load train data:  27%|██▋       | 15323/56195 [00:03<00:10, 3888.25it/s]load train data:  28%|██▊       | 15722/56195 [00:04<00:10, 3918.44it/s]load train data:  29%|██▊       | 16114/56195 [00:04<00:10, 3908.68it/s]load train data:  29%|██▉       | 16510/56195 [00:04<00:10, 3921.19it/s]load train data:  30%|███       | 16904/56195 [00:04<00:10, 3926.45it/s]load train data:  31%|███       | 17297/56195 [00:04<00:09, 3911.05it/s]load train data:  31%|███▏      | 17689/56195 [00:04<00:09, 3909.33it/s]load train data:  32%|███▏      | 18083/56195 [00:04<00:09, 3917.06it/s]load train data:  33%|███▎      | 18475/56195 [00:04<00:09, 3899.66it/s]load train data:  34%|███▎      | 18865/56195 [00:04<00:09, 3891.43it/s]load train data:  34%|███▍      | 19257/56195 [00:04<00:09, 3899.67it/s]load train data:  35%|███▍      | 19647/56195 [00:05<00:09, 3869.94it/s]load train data:  36%|███▌      | 20036/56195 [00:05<00:09, 3874.61it/s]load train data:  36%|███▋      | 20424/56195 [00:05<00:09, 3872.95it/s]load train data:  37%|███▋      | 20812/56195 [00:05<00:09, 3862.48it/s]load train data:  38%|███▊      | 21199/56195 [00:05<00:09, 3854.83it/s]load train data:  38%|███▊      | 21591/56195 [00:05<00:08, 3872.70it/s]load train data:  39%|███▉      | 21985/56195 [00:05<00:08, 3890.15it/s]load train data:  40%|███▉      | 22378/56195 [00:05<00:08, 3899.64it/s]load train data:  41%|████      | 22772/56195 [00:05<00:08, 3909.21it/s]load train data:  41%|████      | 23163/56195 [00:05<00:08, 3905.55it/s]load train data:  42%|████▏     | 23554/56195 [00:06<00:08, 3881.55it/s]load train data:  43%|████▎     | 23943/56195 [00:06<00:08, 3870.83it/s]load train data:  43%|████▎     | 24331/56195 [00:06<00:08, 3871.58it/s]load train data:  44%|████▍     | 24730/56195 [00:06<00:08, 3904.63it/s]load train data:  45%|████▍     | 25121/56195 [00:06<00:07, 3892.64it/s]load train data:  45%|████▌     | 25512/56195 [00:06<00:07, 3897.36it/s]load train data:  46%|████▌     | 25911/56195 [00:06<00:07, 3923.56it/s]load train data:  47%|████▋     | 26304/56195 [00:06<00:07, 3924.02it/s]load train data:  48%|████▊     | 26697/56195 [00:06<00:07, 3901.37it/s]load train data:  48%|████▊     | 27088/56195 [00:06<00:07, 3899.85it/s]load train data:  49%|████▉     | 27479/56195 [00:07<00:07, 3876.14it/s]load train data:  50%|████▉     | 27870/56195 [00:07<00:07, 3885.53it/s]load train data:  50%|█████     | 28259/56195 [00:07<00:07, 3868.84it/s]load train data:  51%|█████     | 28651/56195 [00:07<00:07, 3884.05it/s]load train data:  52%|█████▏    | 29047/56195 [00:07<00:06, 3905.34it/s]load train data:  52%|█████▏    | 29438/56195 [00:07<00:06, 3903.22it/s]load train data:  53%|█████▎    | 29829/56195 [00:07<00:06, 3871.97it/s]load train data:  54%|█████▍    | 30217/56195 [00:07<00:06, 3868.99it/s]load train data:  54%|█████▍    | 30614/56195 [00:07<00:06, 3895.97it/s]load train data:  55%|█████▌    | 31004/56195 [00:07<00:06, 3737.72it/s]load train data:  56%|█████▌    | 31388/56195 [00:08<00:06, 3766.02it/s]load train data:  57%|█████▋    | 31767/56195 [00:08<00:06, 3771.64it/s]load train data:  57%|█████▋    | 32148/56195 [00:08<00:06, 3781.17it/s]load train data:  58%|█████▊    | 32531/56195 [00:08<00:06, 3793.17it/s]load train data:  59%|█████▊    | 32920/56195 [00:08<00:06, 3820.64it/s]load train data:  59%|█████▉    | 33303/56195 [00:08<00:06, 3798.99it/s]load train data:  60%|█████▉    | 33684/56195 [00:08<00:05, 3793.38it/s]load train data:  61%|██████    | 34072/56195 [00:08<00:05, 3818.90it/s]load train data:  61%|██████▏   | 34456/56195 [00:08<00:05, 3825.05it/s]load train data:  62%|██████▏   | 34839/56195 [00:08<00:05, 3826.19it/s]load train data:  63%|██████▎   | 35222/56195 [00:09<00:05, 3826.58it/s]load train data:  63%|██████▎   | 35605/56195 [00:09<00:05, 3804.02it/s]load train data:  64%|██████▍   | 35986/56195 [00:09<00:05, 3793.85it/s]load train data:  65%|██████▍   | 36366/56195 [00:09<00:05, 3787.71it/s]load train data:  65%|██████▌   | 36745/56195 [00:09<00:05, 3783.61it/s]load train data:  66%|██████▌   | 37126/56195 [00:09<00:05, 3788.59it/s]load train data:  67%|██████▋   | 37507/56195 [00:09<00:04, 3792.84it/s]load train data:  67%|██████▋   | 37887/56195 [00:09<00:04, 3783.18it/s]load train data:  68%|██████▊   | 38267/56195 [00:09<00:04, 3786.43it/s]load train data:  69%|██████▉   | 38648/56195 [00:09<00:04, 3793.39it/s]load train data:  69%|██████▉   | 39043/56195 [00:10<00:04, 3836.41it/s]load train data:  70%|███████   | 39427/56195 [00:10<00:04, 3823.36it/s]load train data:  71%|███████   | 39811/56195 [00:10<00:04, 3825.97it/s]load train data:  72%|███████▏  | 40194/56195 [00:10<00:04, 3760.77it/s]load train data:  72%|███████▏  | 40581/56195 [00:10<00:04, 3791.92it/s]load train data:  73%|███████▎  | 40961/56195 [00:10<00:04, 3785.47it/s]load train data:  74%|███████▎  | 41343/56195 [00:10<00:03, 3794.52it/s]load train data:  74%|███████▍  | 41727/56195 [00:10<00:03, 3805.00it/s]load train data:  75%|███████▍  | 42118/56195 [00:10<00:03, 3835.56it/s]load train data:  76%|███████▌  | 42508/56195 [00:10<00:03, 3854.40it/s]load train data:  76%|███████▋  | 42899/56195 [00:11<00:03, 3867.73it/s]load train data:  77%|███████▋  | 43286/56195 [00:11<00:03, 3851.82it/s]load train data:  78%|███████▊  | 43672/56195 [00:11<00:03, 3818.79it/s]load train data:  78%|███████▊  | 44065/56195 [00:11<00:03, 3851.61it/s]load train data:  79%|███████▉  | 44459/56195 [00:11<00:03, 3874.22it/s]load train data:  80%|███████▉  | 44847/56195 [00:11<00:02, 3797.44it/s]load train data:  81%|████████  | 45239/56195 [00:11<00:02, 3830.68it/s]load train data:  81%|████████  | 45623/56195 [00:12<00:06, 1702.36it/s]load train data:  82%|████████▏ | 46011/56195 [00:12<00:04, 2046.50it/s]load train data:  83%|████████▎ | 46397/56195 [00:12<00:04, 2380.32it/s]load train data:  83%|████████▎ | 46781/56195 [00:12<00:03, 2683.71it/s]load train data:  84%|████████▍ | 47166/56195 [00:12<00:03, 2949.32it/s]load train data:  85%|████████▍ | 47542/56195 [00:12<00:02, 3149.21it/s]load train data:  85%|████████▌ | 47928/56195 [00:12<00:02, 3333.59it/s]load train data:  86%|████████▌ | 48312/56195 [00:12<00:02, 3470.48it/s]load train data:  87%|████████▋ | 48703/56195 [00:13<00:02, 3591.76it/s]load train data:  87%|████████▋ | 49084/56195 [00:13<00:01, 3645.62it/s]load train data:  88%|████████▊ | 49471/56195 [00:13<00:01, 3709.50it/s]load train data:  89%|████████▊ | 49858/56195 [00:13<00:01, 3754.32it/s]load train data:  89%|████████▉ | 50246/56195 [00:13<00:01, 3789.72it/s]load train data:  90%|█████████ | 50633/56195 [00:13<00:01, 3812.73it/s]load train data:  91%|█████████ | 51029/56195 [00:13<00:01, 3853.58it/s]load train data:  92%|█████████▏| 51422/56195 [00:13<00:01, 3874.26it/s]load train data:  92%|█████████▏| 51812/56195 [00:13<00:01, 3880.51it/s]load train data:  93%|█████████▎| 52202/56195 [00:13<00:01, 3867.80it/s]load train data:  94%|█████████▎| 52590/56195 [00:14<00:00, 3867.04it	Entity [403, 406] out of max seq_len 128, text Their conclusions : Materazzi had accused Zidane ' ...
+	Entity [403, 406] out of max seq_len 128, text Their conclusions : Materazzi had accused Zidane ' ...
+	Relation (BBC, /business/company/place_founded, London) out of max seq_len 128, text Their conclusions : Materazzi had accused Zidane ' ...
+	Relation (BBC, /business/company/place_founded, London) out of max seq_len 128, text Their conclusions : Materazzi had accused Zidane ' ...
+	Entity [445, 450] out of max seq_len 128, text Other designers moonlighting at hotel projects inc ...
+	Entity [436, 442] out of max seq_len 128, text Other designers moonlighting at hotel projects inc ...
+	Relation (Italy, /location/location/contains, Rimini) out of max seq_len 128, text Other designers moonlighting at hotel projects inc ...
+	Entity [449, 452] out of max seq_len 128, text -LRB- Gates -RRB- VILLAGE VOICE BEST OF 2004 -LRB- ...
+	Entity [461, 465] out of max seq_len 128, text -LRB- Gates -RRB- VILLAGE VOICE BEST OF 2004 -LRB- ...
+	Entity [449, 452] out of max seq_len 128, text -LRB- Gates -RRB- VILLAGE VOICE BEST OF 2004 -LRB- ...
+	Entity [461, 465] out of max seq_len 128, text -LRB- Gates -RRB- VILLAGE VOICE BEST OF 2004 -LRB- ...
+	Relation (Mak, /people/person/place_of_birth, Kong) out of max seq_len 128, text -LRB- Gates -RRB- VILLAGE VOICE BEST OF 2004 -LRB- ...
+	Relation (Mak, /people/person/place_lived, Kong) out of max seq_len 128, text -LRB- Gates -RRB- VILLAGE VOICE BEST OF 2004 -LRB- ...
+	Entity [442, 452] out of max seq_len 128, text -LRB- Gates -RRB- STANLEY KUBRICK RETROSPECTIVE -L ...
+	Relation (Schnitzler, /people/person/place_of_birth, Vienna) out of max seq_len 128, text -LRB- Gates -RRB- STANLEY KUBRICK RETROSPECTIVE -L ...
+	Entity [374, 380] out of max seq_len 128, text Screenings this weekend : '' Unknown Pleasures ''  ...
+	Entity [374, 380] out of max seq_len 128, text Screenings this weekend : '' Unknown Pleasures ''  ...
+	Entity [374, 380] out of max seq_len 128, text Screenings this weekend : '' Unknown Pleasures ''  ...
+	Entity [374, 380] out of max seq_len 128, text Screenings this weekend : '' Unknown Pleasures ''  ...
+	Relation (China, /location/country/administrative_divisions, Taiwan) out of max seq_len 128, text Screenings this weekend : '' Unknown Pleasures ''  ...
+	Relation (China, /location/country/administrative_divisions, Taiwan) out of max seq_len 128, text Screenings this weekend : '' Unknown Pleasures ''  ...
+	Relation (Taiwan, /location/administrative_division/country, China) out of max seq_len 128, text Screenings this weekend : '' Unknown Pleasures ''  ...
+	Relation (Taiwan, /location/administrative_division/country, China) out of max seq_len 128, text Screenings this weekend : '' Unknown Pleasures ''  ...
+	Entity [449, 452] out of max seq_len 128, text -LRB- Gates -RRB- VILLAGE VOICE BEST OF 2004 -LRB- ...
+	Entity [461, 465] out of max seq_len 128, text -LRB- Gates -RRB- VILLAGE VOICE BEST OF 2004 -LRB- ...
+	Entity [449, 452] out of max seq_len 128, text -LRB- Gates -RRB- VILLAGE VOICE BEST OF 2004 -LRB- ...
+	Entity [461, 465] out of max seq_len 128, text -LRB- Gates -RRB- VILLAGE VOICE BEST OF 2004 -LRB- ...
+	Relation (Mak, /people/person/place_lived, Kong) out of max seq_len 128, text -LRB- Gates -RRB- VILLAGE VOICE BEST OF 2004 -LRB- ...
+	Relation (Mak, /people/person/place_of_birth, Kong) out of max seq_len 128, text -LRB- Gates -RRB- VILLAGE VOICE BEST OF 2004 -LRB- ...
+	Entity [472, 477] out of max seq_len 128, text Noon and 3 p.m. -LRB- Rain date , Sunday -RRB- , G ...
+	Relation (White, /people/person/place_lived, Brooklyn) out of max seq_len 128, text Noon and 3 p.m. -LRB- Rain date , Sunday -RRB- , G ...
+	Entity [468, 472] out of max seq_len 128, text XXX XXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXXXXX XXXXXXX ...
+	Entity [502, 508] out of max seq_len 128, text XXX XXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXXXXX XXXXXXX ...
+	Entity [468, 472] out of max seq_len 128, text XXX XXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXXXXX XXXXXXX ...
+	Entity [502, 508] out of max seq_len 128, text XXX XXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXXXXX XXXXXXX ...
+	Relation (Iran, /location/country/capital, Tehran) out of max seq_len 128, text XXX XXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXXXXX XXXXXXX ...
+	Relation (Iran, /location/location/contains, Tehran) out of max seq_len 128, text XXX XXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXXXXX XXXXXXX ...
+[2023-05-30 09:04:01,723][data_utils][INFO] - Get 56189 instances from file : train_data.json
+[2023-05-30 09:04:01,904][data_utils][INFO] - Reading tasks from data/nyt_star/valid_data.json...
+[2023-05-30 09:04:01,905][data_utils][INFO] - For decoder output, the ent label and rel label separator are [SEP](0) and [SEP](0)
+/s]load train data:  94%|█████████▍| 52982/56195 [00:14<00:00, 3881.06it/s]load train data:  95%|█████████▍| 53371/56195 [00:14<00:00, 3871.07it/s]load train data:  96%|█████████▌| 53761/56195 [00:14<00:00, 3877.81it/s]load train data:  96%|█████████▋| 54150/56195 [00:14<00:00, 3870.85it/s]load train data:  97%|█████████▋| 54539/56195 [00:14<00:00, 3875.38it/s]load train data:  98%|█████████▊| 54931/56195 [00:14<00:00, 3887.68it/s]load train data:  98%|█████████▊| 55325/56195 [00:14<00:00, 3902.13it/s]load train data:  99%|█████████▉| 55716/56195 [00:14<00:00, 3890.97it/s]load train data: 100%|█████████▉| 56108/56195 [00:14<00:00, 3898.87it/s]load train data: 100%|██████████| 56195/56195 [00:14<00:00, 3758.09it/s]
+load valid data:   0%|          | 0/4999 [00:00<?, ?it/s]load valid data:   8%|▊         | 382/4999 [00:00<00:01, 3807.53it/s]load valid data:  15%|█▌        | 768/4999 [00:00<00:01, 3836.96it/s]load valid data:  23%|██▎       | 1156/4999 [00:00<00:00, 3852.98it/s]load valid data:  31%|███       | 1547/4999 [00:00<00:00, 3873.98it/s]load valid data:  39%|███▊      | 1936/4999 [00:00<00:00, 3876.67it/s]load valid data:  47%|████▋     | 2326/4999 [00:00<00:00, 3884.17it/s]load valid data:  54%|█████▍    | 2723/4999 [00:00<00:00, 3911.77it/s]load valid data:  62%|██████▏   | 3115/4999 [00:00<00:00, 3911.53it/s]load valid data:  70%|███████   | 3507/4999 [00:00<00:00, 3889.89it/s]load valid data:  78%|███████▊  | 3899/4999 [00:01<00:00, 3898.37it/s]load valid data:  86%|████████▌ | 4289/4999 [00:01<00:00, 3892.73it/s]load valid data:  94%|█████████▎| 4680/4999 [00:01<00:00[2023-05-30 09:04:03,193][data_utils][INFO] - Get 4999 instances from file : valid_data.json
+[2023-05-30 09:04:03,203][__main__][INFO] - batch_size is 32 , train batch num: 1756, valid batch num: 79
+[2023-05-30 09:04:03,249][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp7pa4voph
+[2023-05-30 09:04:03,249][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp7pa4voph/_remote_module_non_scriptable.py
+, 3894.39it/s]load valid data: 100%|██████████| 4999/4999 [00:01<00:00, 3882.21it/s]
+Multiprocessing is handled by SLURM.
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+[2023-05-30 09:04:03,296][root][INFO] - Get pytorch_lightning trainer
+/mnt/petrelfs/liuyilin/anaconda_lyl/envs/tp/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:608: UserWarning: Checkpoint directory /mnt/petrelfs/liuyilin/SchemeFree_RE/checkpoints exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+
+  | Name  | Type        | Params
+--------------------------------------
+0 | model | ScFreeModel | 166 M 
+--------------------------------------
+166 M     Trainable params
+0         Non-trainable params
+166 M     Total params
+665.712   Total estimated model params size (MB)
+SLURM auto-requeueing enabled. Setting signal handlers.
+[2023-05-30 09:04:06,150][root][INFO] - 	[epoch 0 - 0] entity loss: 1.893, relation loss: 3.695 
+[2023-05-30 09:04:06,544][root][INFO] - 	[epoch 0 - 1] entity loss: 0.384, relation loss: 3.003 
+[2023-05-30 09:04:07,044][root][INFO] - 	[epoch 0 - 2] entity loss: 0.495, relation loss: 2.603 
+[2023-05-30 09:04:07,697][root][INFO] - 	[epoch 0 - 3] entity loss: 0.019, relation loss: 2.202 
+[2023-05-30 09:04:08,252][root][INFO] - 	[epoch 0 - 4] entity loss: 0.030, relation loss: 2.085 
+[2023-05-30 09:06:05,516][root][INFO] - 	[epoch 0 - 250] entity loss: 0.000, relation loss: 0.222 
+[2023-05-30 09:08:01,008][root][INFO] - 	[epoch 0 - 500] entity loss: 0.000, relation loss: 0.235 
+[2023-05-30 09:09:58,118][root][INFO] - 	[epoch 0 - 750] entity loss: 0.000, relation loss: 0.246 
+[2023-05-30 09:11:53,058][root][INFO] - 	[epoch 0 - 1000] entity loss: 0.000, relation loss: 0.329 
+[2023-05-30 09:13:48,376][root][INFO] - 	[epoch 0 - 1250] entity loss: 0.000, relation loss: 0.236 
+[2023-05-30 09:15:47,671][root][INFO] - 	[epoch 0 - 1500] entity loss: 0.000, relation loss: 0.217 
+[2023-05-30 09:17:43,648][root][INFO] - 	[epoch 0 - 1750] entity loss: 0.000, relation loss: 0.227 
+[2023-05-30 09:18:17,738][root][INFO] - 2023-05-30 09:18:17
+Relation:
+	correct_num: 10058, predict_num: 122011, gold_num: 15045
+	precision:0.082, recall:0.669, f1_score:0.147
+Entity:
+	correct_num: 11527, predict_num: 11527, gold_num: 11527
+	precision:1.000, recall:1.000, f1_score:1.000
+
+
+[2023-05-30 09:18:17,759][root][INFO] - [epoch 0] mean_ent_loss: 0.002, mean_rel_loss: 0.275
+
+[2023-05-30 09:18:19,438][root][INFO] - 	[epoch 1 - 0] entity loss: 0.000, relation loss: 0.287 
+[2023-05-30 09:18:19,821][root][INFO] - 	[epoch 1 - 1] entity loss: 0.000, relation loss: 0.228 
+[2023-05-30 09:18:20,317][root][INFO] - 	[epoch 1 - 2] entity loss: 0.000, relation loss: 0.241 
+[2023-05-30 09:18:20,965][root][INFO] - 	[epoch 1 - 3] entity loss: 0.000, relation loss: 0.211 
+[2023-05-30 09:18:21,515][root][INFO] - 	[epoch 1 - 4] entity loss: 0.000, relation loss: 0.240 
+[2023-05-30 09:20:18,760][root][INFO] - 	[epoch 1 - 250] entity loss: 0.000, relation loss: 0.210 
+[2023-05-30 09:22:14,353][root][INFO] - 	[epoch 1 - 500] entity loss: 0.000, relation loss: 0.219 
+[2023-05-30 09:24:11,258][root][INFO] - 	[epoch 1 - 750] entity loss: 0.000, relation loss: 0.229 
+[2023-05-30 09:26:06,351][root][INFO] - 	[epoch 1 - 1000] entity loss: 0.000, relation loss: 0.300 
+[2023-05-30 09:28:01,818][root][INFO] - 	[epoch 1 - 1250] entity loss: 0.000, relation loss: 0.257 
+[2023-05-30 09:30:01,111][root][INFO] - 	[epoch 1 - 1500] entity loss: 0.000, relation loss: 0.221 
+[2023-05-30 09:31:57,054][root][INFO] - 	[epoch 1 - 1750] entity loss: 0.000, relation loss: 0.224 
+[2023-05-30 09:32:30,697][root][INFO] - 2023-05-30 09:32:30
+Relation:
+	correct_num: 10058, predict_num: 122011, gold_num: 15045
+	precision:0.082, recall:0.669, f1_score:0.147
+Entity:
+	correct_num: 11527, predict_num: 11527, gold_num: 11527
+	precision:1.000, recall:1.000, f1_score:1.000
+
+
+[2023-05-30 09:32:30,714][root][INFO] - [epoch 1] mean_ent_loss: 0.000, mean_rel_loss: 0.247
+
+[2023-05-30 09:32:30,805][root][INFO] - 	[epoch 2 - 0] entity loss: 0.000, relation loss: 0.281 
+[2023-05-30 09:32:31,186][root][INFO] - 	[epoch 2 - 1] entity loss: 0.000, relation loss: 0.224 
+[2023-05-30 09:32:31,682][root][INFO] - 	[epoch 2 - 2] entity loss: 0.000, relation loss: 0.240 
+[2023-05-30 09:32:32,333][root][INFO] - 	[epoch 2 - 3] entity loss: 0.000, relation loss: 0.206 
+[2023-05-30 09:32:32,886][root][INFO] - 	[epoch 2 - 4] entity loss: 0.000, relation loss: 0.238 
+[2023-05-30 09:34:30,263][root][INFO] - 	[epoch 2 - 250] entity loss: 0.000, relation loss: 0.213 
+[2023-05-30 09:36:25,560][root][INFO] - 	[epoch 2 - 500] entity loss: 0.000, relation loss: 0.216 
+[2023-05-30 09:38:22,878][root][INFO] - 	[epoch 2 - 750] entity loss: 0.000, relation loss: 0.229 
+[2023-05-30 09:40:17,508][root][INFO] - 	[epoch 2 - 1000] entity loss: 0.000, relation loss: 0.291 
+[2023-05-30 09:42:12,435][root][INFO] - 	[epoch 2 - 1250] entity loss: 0.000, relation loss: 0.252 
+[2023-05-30 09:44:11,435][root][INFO] - 	[epoch 2 - 1500] entity loss: 0.000, relation loss: 0.220 
+[2023-05-30 09:46:07,466][root][INFO] - 	[epoch 2 - 1750] entity loss: 0.000, relation loss: 0.225 
+[2023-05-30 09:46:41,001][root][INFO] - 2023-05-30 09:46:41
+Relation:
+	correct_num: 10058, predict_num: 122011, gold_num: 15045
+	precision:0.082, recall:0.669, f1_score:0.147
+Entity:
+	correct_num: 11527, predict_num: 11527, gold_num: 11527
+	precision:1.000, recall:1.000, f1_score:1.000
+
+
+[2023-05-30 09:46:41,017][root][INFO] - [epoch 2] mean_ent_loss: 0.000, mean_rel_loss: 0.245
+
+[2023-05-30 09:46:41,104][root][INFO] - 	[epoch 3 - 0] entity loss: 0.000, relation loss: 0.283 
+[2023-05-30 09:46:41,483][root][INFO] - 	[epoch 3 - 1] entity loss: 0.000, relation loss: 0.222 
+[2023-05-30 09:46:41,979][root][INFO] - 	[epoch 3 - 2] entity loss: 0.000, relation loss: 0.236 
+[2023-05-30 09:46:42,628][root][INFO] - 	[epoch 3 - 3] entity loss: 0.000, relation loss: 0.203 
+[2023-05-30 09:46:43,178][root][INFO] - 	[epoch 3 - 4] entity loss: 0.000, relation loss: 0.236 
+[2023-05-30 09:48:40,448][root][INFO] - 	[epoch 3 - 250] entity loss: 0.000, relation loss: 0.216 
+[2023-05-30 09:50:35,926][root][INFO] - 	[epoch 3 - 500] entity loss: 0.000, relation loss: 0.217 
+[2023-05-30 09:52:33,290][root][INFO] - 	[epoch 3 - 750] entity loss: 0.000, relation loss: 0.228 
+[2023-05-30 09:54:28,437][root][INFO] - 	[epoch 3 - 1000] entity loss: 0.000, relation loss: 0.284 
+[2023-05-30 09:56:23,966][root][INFO] - 	[epoch 3 - 1250] entity loss: 0.000, relation loss: 0.248 
+[2023-05-30 09:58:23,484][root][INFO] - 	[epoch 3 - 1500] entity loss: 0.000, relation loss: 0.224 
+[2023-05-30 10:00:19,577][root][INFO] - 	[epoch 3 - 1750] entity loss: 0.000, relation loss: 0.229 
+[2023-05-30 10:00:53,230][root][INFO] - 2023-05-30 10:00:53
+Relation:
+	correct_num: 10058, predict_num: 100788, gold_num: 15045
+	precision:0.100, recall:0.669, f1_score:0.174
+Entity:
+	correct_num: 11527, predict_num: 11527, gold_num: 11527
+	precision:1.000, recall:1.000, f1_score:1.000
+
+
+[2023-05-30 10:00:53,246][root][INFO] - [epoch 3] mean_ent_loss: 0.000, mean_rel_loss: 0.244
+
+[2023-05-30 10:00:54,897][root][INFO] - 	[epoch 4 - 0] entity loss: 0.000, relation loss: 0.287 
+[2023-05-30 10:00:55,279][root][INFO] - 	[epoch 4 - 1] entity loss: 0.000, relation loss: 0.224 
+[2023-05-30 10:00:55,776][root][INFO] - 	[epoch 4 - 2] entity loss: 0.000, relation loss: 0.238 
+[2023-05-30 10:00:56,425][root][INFO] - 	[epoch 4 - 3] entity loss: 0.000, relation loss: 0.202 
+[2023-05-30 10:00:56,976][root][INFO] - 	[epoch 4 - 4] entity loss: 0.000, relation loss: 0.235 
+[2023-05-30 10:02:54,413][root][INFO] - 	[epoch 4 - 250] entity loss: 0.000, relation loss: 0.210 
+[2023-05-30 10:04:49,878][root][INFO] - 	[epoch 4 - 500] entity loss: 0.000, relation loss: 0.216 
+[2023-05-30 10:06:47,193][root][INFO] - 	[epoch 4 - 750] entity loss: 0.000, relation loss: 0.226 
+[2023-05-30 10:08:42,316][root][INFO] - 	[epoch 4 - 1000] entity loss: 0.000, relation loss: 0.279 
+[2023-05-30 10:10:37,995][root][INFO] - 	[epoch 4 - 1250] entity loss: 0.000, relation loss: 0.247 
+[2023-05-30 10:12:37,006][root][INFO] - 	[epoch 4 - 1500] entity loss: 0.000, relation loss: 0.224 
+[2023-05-30 10:14:32,547][root][INFO] - 	[epoch 4 - 1750] entity loss: 0.000, relation loss: 0.227 
+[2023-05-30 10:15:06,115][root][INFO] - 2023-05-30 10:15:06
+Relation:
+	correct_num: 10058, predict_num: 100788, gold_num: 15045
+	precision:0.100, recall:0.669, f1_score:0.174
+Entity:
+	correct_num: 11527, predict_num: 11527, gold_num: 11527
+	precision:1.000, recall:1.000, f1_score:1.000
+
+
+[2023-05-30 10:15:06,131][root][INFO] - [epoch 4] mean_ent_loss: 0.000, mean_rel_loss: 0.243
+
+[2023-05-30 10:15:06,219][root][INFO] - 	[epoch 5 - 0] entity loss: 0.000, relation loss: 0.282 
+[2023-05-30 10:15:06,597][root][INFO] - 	[epoch 5 - 1] entity loss: 0.000, relation loss: 0.225 
+[2023-05-30 10:15:07,092][root][INFO] - 	[epoch 5 - 2] entity loss: 0.000, relation loss: 0.237 
+[2023-05-30 10:15:07,739][root][INFO] - 	[epoch 5 - 3] entity loss: 0.000, relation loss: 0.200 
+[2023-05-30 10:15:08,288][root][INFO] - 	[epoch 5 - 4] entity loss: 0.000, relation loss: 0.236 
+[2023-05-30 10:17:05,131][root][INFO] - 	[epoch 5 - 250] entity loss: 0.000, relation loss: 0.212 
+[2023-05-30 10:19:00,298][root][INFO] - 	[epoch 5 - 500] entity loss: 0.000, relation loss: 0.214 
+[2023-05-30 10:20:57,092][root][INFO] - 	[epoch 5 - 750] entity loss: 0.000, relation loss: 0.227 
+[2023-05-30 10:22:51,760][root][INFO] - 	[epoch 5 - 1000] entity loss: 0.000, relation loss: 0.276 
+[2023-05-30 10:24:46,824][root][INFO] - 	[epoch 5 - 1250] entity loss: 0.000, relation loss: 0.245 
+[2023-05-30 10:26:46,159][root][INFO] - 	[epoch 5 - 1500] entity loss: 0.000, relation loss: 0.224 
+[2023-05-30 10:28:42,589][root][INFO] - 	[epoch 5 - 1750] entity loss: 0.000, relation loss: 0.226 
+[2023-05-30 10:29:16,235][root][INFO] - 2023-05-30 10:29:16
+Relation:
+	correct_num: 10058, predict_num: 100788, gold_num: 15045
+	precision:0.100, recall:0.669, f1_score:0.174
+Entity:
+	correct_num: 11527, predict_num: 11527, gold_num: 11527
+	precision:1.000, recall:1.000, f1_score:1.000
+
+
+[2023-05-30 10:29:16,251][root][INFO] - [epoch 5] mean_ent_loss: 0.000, mean_rel_loss: 0.242
+
+[2023-05-30 10:29:16,338][root][INFO] - 	[epoch 6 - 0] entity loss: 0.000, relation loss: 0.282 
+[2023-05-30 10:29:16,718][root][INFO] - 	[epoch 6 - 1] entity loss: 0.000, relation loss: 0.224 
+[2023-05-30 10:29:17,214][root][INFO] - 	[epoch 6 - 2] entity loss: 0.000, relation loss: 0.235 
+[2023-05-30 10:29:17,863][root][INFO] - 	[epoch 6 - 3] entity loss: 0.000, relation loss: 0.200 
+[2023-05-30 10:29:18,414][root][INFO] - 	[epoch 6 - 4] entity loss: 0.000, relation loss: 0.235 
+[2023-05-30 10:31:15,697][root][INFO] - 	[epoch 6 - 250] entity loss: 0.000, relation loss: 0.211 
+[2023-05-30 10:33:11,578][root][INFO] - 	[epoch 6 - 500] entity loss: 0.000, relation loss: 0.215 
+[2023-05-30 10:35:08,743][root][INFO] - 	[epoch 6 - 750] entity loss: 0.000, relation loss: 0.223 
+[2023-05-30 10:37:03,961][root][INFO] - 	[epoch 6 - 1000] entity loss: 0.000, relation loss: 0.275 
+srun: Force Terminated job 1396711
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+srun: Easily find out why your job was killed by following the link below:
+	https://docs.phoenix.sensetime.com/FAQ/SlurmFAQ/Find-out-why-my-job-was-killed/
+slurmstepd: error: *** STEP 1396711.0 ON SH-IDC1-10-140-24-42 CANCELLED AT 2023-05-30T10:37:39 ***
+/mnt/petrelfs/liuyilin/anaconda_lyl/envs/tp/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 256 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/mnt/petrelfs/liuyilin/anaconda_lyl/envs/tp/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 256 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/mnt/petrelfs/liuyilin/anaconda_lyl/envs/tp/lib/python3.8/site-packages/transformers/generation_utils.py:1359: UserWarning: Neither `max_length` nor `max_new_tokens` has been set, `max_length` will default to 20 (`self.config.max_length`). Controlling `max_length` via the config is deprecated and `max_length` will be removed from the config in v5 of Transformers -- we recommend using `max_new_tokens` to control the maximum length of the generation.
+  warnings.warn(
+bypassing sigterm
+srun: error: Timed out waiting for job step to complete

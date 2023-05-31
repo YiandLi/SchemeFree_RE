@@ -1,0 +1,20 @@
+pred: [CLS] / location / location / contains [EOS] / location / country / administrative _ divisions [EOS] / country /
+label: [CLS] / sports / sports _ team _ location / teams [EOS] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK]
+
+pred: [CLS] / location / location / contains [EOS] / location / country / administrative _ divisions [EOS] / country /
+label: [CLS] / people / person / children [EOS] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK]
+
+pred: [CLS] / location / location / contains [EOS] / location / country / administrative _ divisions [EOS] / country /
+label: [CLS] / people / person / children [EOS] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK]
+
+pred: [CLS] / location / location / contains [EOS] / location / country / administrative _ divisions [EOS] / country /
+label: [CLS] / people / person / children [SEP] / location / location / contains  [EOS] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK]
+
+pred: [CLS] / location / location / contains [EOS] / location / country / administrative _ divisions [EOS] / country /
+label: [CLS] / people / person / children [EOS] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK]
+
+pred: [CLS] / location / location / contains [EOS] / location / country / administrative _ divisions [EOS] / country /
+label: [CLS] / location / location / contains [EOS] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK]
+
+pred: [CLS] / location / location / contains [EOS] / location / country / administrative _ divisions [EOS] / country /
+label: [CLS] / business / person / company [EOS] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK]

@@ -1,0 +1,188 @@
+{
+  "text": "But that spasm of irritation by a master intimidator was minor compared with what Bobby Fischer , the erratic former world chess champion , dished out in March at a news conference in Reykjavik , Iceland .",
+  "id": "test_0",
+  "relation_list": [
+    {
+      "subject": "Iceland",
+      "object": "Reykjavik",
+      "subj_char_span": [
+        196,
+        203
+      ],
+      "obj_char_span": [
+        184,
+        193
+      ],
+      "predicate": "/location/country/capital",
+      "subj_tok_span": [
+        44,
+        45
+      ],
+      "obj_tok_span": [
+        39,
+        43
+      ]
+    },
+    {
+      "subject": "Iceland",
+      "object": "Reykjavik",
+      "subj_char_span": [
+        196,
+        203
+      ],
+      "obj_char_span": [
+        184,
+        193
+      ],
+      "predicate": "/location/location/contains",
+      "subj_tok_span": [
+        44,
+        45
+      ],
+      "obj_tok_span": [
+        39,
+        43
+      ]
+    },
+    {
+      "subject": "Fischer",
+      "object": "Iceland",
+      "subj_char_span": [
+        88,
+        95
+      ],
+      "obj_char_span": [
+        196,
+        203
+      ],
+      "predicate": "/people/person/nationality",
+      "subj_tok_span": [
+        20,
+        21
+      ],
+      "obj_tok_span": [
+        44,
+        45
+      ]
+    },
+    {
+      "subject": "Fischer",
+      "object": "Reykjavik",
+      "subj_char_span": [
+        88,
+        95
+      ],
+      "obj_char_span": [
+        184,
+        193
+      ],
+      "predicate": "/people/deceased_person/place_of_death",
+      "subj_tok_span": [
+        20,
+        21
+      ],
+      "obj_tok_span": [
+        39,
+        43
+      ]
+    }
+  ],
+  "entity_list": [
+    {
+      "text": "Iceland",
+      "type": "DEFAULT",
+      "char_span": [
+        196,
+        203
+      ],
+      "tok_span": [
+        44,
+        45
+      ]
+    },
+    {
+      "text": "Reykjavik",
+      "type": "DEFAULT",
+      "char_span": [
+        184,
+        193
+      ],
+      "tok_span": [
+        39,
+        43
+      ]
+    },
+    {
+      "text": "Iceland",
+      "type": "DEFAULT",
+      "char_span": [
+        196,
+        203
+      ],
+      "tok_span": [
+        44,
+        45
+      ]
+    },
+    {
+      "text": "Reykjavik",
+      "type": "DEFAULT",
+      "char_span": [
+        184,
+        193
+      ],
+      "tok_span": [
+        39,
+        43
+      ]
+    },
+    {
+      "text": "Fischer",
+      "type": "DEFAULT",
+      "char_span": [
+        88,
+        95
+      ],
+      "tok_span": [
+        20,
+        21
+      ]
+    },
+    {
+      "text": "Iceland",
+      "type": "DEFAULT",
+      "char_span": [
+        196,
+        203
+      ],
+      "tok_span": [
+        44,
+        45
+      ]
+    },
+    {
+      "text": "Fischer",
+      "type": "DEFAULT",
+      "char_span": [
+        88,
+        95
+      ],
+      "tok_span": [
+        20,
+        21
+      ]
+    },
+    {
+      "text": "Reykjavik",
+      "type": "DEFAULT",
+      "char_span": [
+        184,
+        193
+      ],
+      "tok_span": [
+        39,
+        43
+      ]
+    }
+  ]
+}
