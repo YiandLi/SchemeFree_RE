@@ -1,7 +1,0 @@
-mode: train
-encoder_type: bert-base-uncased
-max_seq_len: 128
-dataset_path: data/nyt_star
-batch_size: 32
-epochs: 10
-lr: 5.0e-05
