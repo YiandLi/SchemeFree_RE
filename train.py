@@ -72,8 +72,7 @@ def main(config):
     logger.info(f"========== device: {device} =========")
     if torch.cuda.is_available():
         logger.info("=" * 20 + f"Using Gpu: {torch.cuda.get_device_name(0)} " + "=" * 20)
-    else:  # for local test
-        logger.info("local test: max_seq_len = 16, batch_size = 4")
+
     
     torch.manual_seed(42)  # pytorch random seed
     torch.backends.cudnn.deterministic = True
